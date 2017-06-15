@@ -1,5 +1,4 @@
-/* global Popper */
-
+import Popper from 'popper.js'
 import Util from './util'
 
 
@@ -11,16 +10,6 @@ import Util from './util'
  */
 
 const Tooltip = (($) => {
-
-  /**
-   * Check for Popper dependency
-   * Popper - https://popper.js.org
-   */
-  if (typeof Popper === 'undefined') {
-    throw new Error('Bootstrap tooltips require Popper.js (https://popper.js.org)')
-  }
-
-
   /**
    * ------------------------------------------------------------------------
    * Constants
